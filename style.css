@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+body { 
+    background: #fdc996;
+    text-align: center; /* Центрируем контент по горизонтали */
+    margin: 0;
+}
+
+.image {
+    position: relative;
+    display: inline-block; /* Чтобы картинки центрировались */
+}
+#conteinet{
+    width: 100vh;
+    height:100vh;
+}
+#varvar {
+    width: 80%;
+    position: relative; /* Остаётся поверх */
+    z-index: 1;
+}
+
+#hearts {
+    width:20%;
+    position: absolute; /* Размещаем поверх */
+    z-index: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Центрируем по оси X */
+}
+#text{
+    margin: 0;
+    color:red;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    visibility: hidden;
+    transform: translateX(-50%);
+    font-family: "Marck Script", serif;
+    font-weight: 800;
+    font-size: 60px;
+}
+#question{
+    color:red;
+    position: absolute;
+    font-family: "Marck Script", serif;
+    transform: translateX(-50%);
+    top:55%;
+    left: 50%;
+    font-weight: 700;
+    font-size: 40px;
+    display: none;
+}
+button {
+    position:absolute;
+    border-radius: 18px;
+    width: 140px;
+    height: 50px;
+    font-family: "Arial";
+    font-style:italic;
+    font-size:30px;
+    background: #f52f53; /* Красный фон */
+    color: white; /* Белый текст */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #d42d50; /* Темно-красный контур */
+    border-radius: 10px; /* Закругление углов */
+    cursor: pointer;
+    transition: 0.3s;
+}
+#yes{
+    top: 70%;
+    left: 40%;
+    display: none;
+}
+#no{
+    top: 70%;
+    left: 51%;
+    z-index:1 ;
+    display: none;
+}
+button:hover {
+    background: #d42d50; /* Затемнение при наведении */
+    border-color: #a82038;
+    border: 2px solid #fff; /* Темно-красный контур */
+}
