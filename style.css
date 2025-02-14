@@ -69,12 +69,12 @@ button {
 }
 #yes{
     top: 70%;
-    left: 40%;
+    left: 37%;
     display: none;
 }
 #no{
     top: 70%;
-    left: 51%;
+    left: 54%;
     z-index:1 ;
     display: none;
 }
